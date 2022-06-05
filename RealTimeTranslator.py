@@ -164,6 +164,8 @@ if __name__ == "__main__":
     print('============================')
 
     while True:
+        stop = input()
+        
         #print(1)
         pyautogui.screenshot(os.path.dirname(os.path.realpath(sys.executable)) + "temp.png", region=(container[0][0], container[0][1], container[1][0]-container[0][0], container[1][1]-container[0][1]))
         
@@ -178,7 +180,7 @@ if __name__ == "__main__":
             continue
 
         #print((4))
-        stop = input()
+        
             
         res = baiduTranslate(ocr_res,appid,appkey)
         
